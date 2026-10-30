@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo jQuery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+</script>
+<body>
+
+    <h1>Minha primeira atividade com jQuery</h1>
+
+    <p id="mensagem">Olá, turma! Vamos aprender jQuery!</p>
+
+    <button id="btnAlterar">Alterar mensagem</button>
+
+<button id="btnEsconder">Esconder mensagem</button>
+
+<button id="btnMostrar">Mostrar mensagem</button>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $("#btnAlterar").click(function() {
+        $("#mensagem").text("Conseguimos usar jQuery!");
+    });
+    $("#btnEsconder").click(function() {
+    $("#mensagem").hide();
+});
+
+$("#btnMostrar").click(function() {
+    $("#mensagem").show();
+});
+</script>
+</html>
